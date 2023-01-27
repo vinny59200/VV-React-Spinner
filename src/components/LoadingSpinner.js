@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './LoadingSpinner.css'
+import logo from './/avatar.png';
 
 
 function LoadingSpinner(props) {
@@ -11,7 +12,7 @@ function LoadingSpinner(props) {
 
   return (
     <div className={`loading-spinner ${props.toggle ? 'visible' : 'hidden'}`}>
-      <div className="spinner"></div>
+      <div className="spinner"><img src={logo} width={'36'}/></div>
     </div>
   );
 }
